@@ -1,1 +1,588 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">City Design</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </nav>
+
+    <!-- Business Ideas Section -->
+    <section class="business-ideas">
+        <h2 class="head">Identified Business Ideas</h2>
+        <div class="ideas-box">
+            
+            <div class="idea">
+                <h3>Power Demand Analysis</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <b>Relevance to SDG 7:</b>Affordable and Clean Energy:Ensure access to affordable, reliable, sustainable, and modern energy for all.
+                        </li>
+                        <li>
+                            This business idea Power demand analysis plays a critical role in ensuring that energy is distributed efficiently and meets the needs of different sectors without waste.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Real-time monitoring and adjustment:</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <b>Relevance to SDG 13:</b>Climate Action:Take urgent action to combat climate change and its impacts.
+                        </li>
+                        <li>
+                            This idea focuses on real-time monitoring and adjustment systems are crucial for ensuring the reliability and efficiency of electricity distribution.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+    <!-- Reflection Section -->
+    <section class="Reflection">
+        <h2>Course  Learning Reflections</h2>
+        <div class="reflection-box">
+            <ol>
+                <li>
+                    What are the kinds of problems we see in nature? (iteration, recursion, backtracking)
+                    <p class="ans">
+                        In nature, we can see problems being solved in ways similar to computational techniques like iteration, recursion, and backtracking. 
+                        For example, iteration shows up in things like the repeating cycles of seasons or the rise and fall of predator-prey populations. 
+                        Recursion is easy to spot in patterns like snowflakes, the way trees branch out, or how rivers split into smaller streams—all of them repeating the same shapes on different scales. 
+                        Backtracking happens when animals, like ants or rats, try one path to find food, hit a dead end, and go back to try another. 
+                        Nature uses these methods to adapt, solve problems, and make things work efficiently.
+                    </p>
+                </li>
+                <li>
+                    What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth.
+                    <p class="ans">Space Complexity: Is the extra space taken by an algorithm to execute. Time complexity: Time taken by an algorithm to execute is called time complexity. Space and time complexity are important for evaluating the efficiency of algorithms. They help programmers understand how an algorithm performs and whether it is suitable for specific applications. The orders of growth of an algorithm describe how time or space requirements grow as the input size increases.
+                        <br> O(1) -> constant order of growth <br> O(n) -> linear order of growth <br> O(log n) -> logarithmic order of growth
+                    </p>
+                </li>
+                <li>
+                    Take away from different design principles from chapter 2?
+                    <p class="ans">After studying different algorithms, the key ideas started to make sense. Learning how AVL trees and Red-Black trees maintain balance highlighted the importance of structures in data and efficient operations. Comparing brave and cautious travel to DFS and BFS in graph traversal showed how different strategies can solve problems effectively. Finally, understanding how various sorting algorithms work, such as dividing and merging or swapping elements, helped to understand their logic. In all, these concepts have provided a solid foundation for the principles of algorithms.</p>
+                </li>
+                <li>
+                    The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)
+                    <p class="ans">Tree data structures help organize hierarchical data efficiently and solve various problems. Binary search trees improve searching by ordering the roots, but they are not balanced. A 2-3 tree is a self-balancing tree designed to keep operations efficient by keeping all leaf nodes at the same level, but this still introduces skewness in the tree. Hence, we moved towards the AVL tree, which was balanced based on a balancing factor and rotations. Further, to reduce the number of rotations, we moved to the Red-Black tree. Heap is a complete binary tree that ensures the heap property. Heaps are good for priority queues. A Trie is a tree data structure primarily used for storing strings. Tries are used for tasks like autocomplete and prefix search.</p>
+                </li>
+                <li>
+                    The need for array query algorithms and their implications. Their applications and principles need to be discussed.
+                    <p class="ans">Array queries are necessary for efficiently handling large amounts of data with frequent updates. Lookup tables are good for precomputing and storing results to allow fast retrieval during range queries. Segment trees are versatile structures and useful for efficient updates. An alternative to these is BIT with simpler code for range queries, operating on the principle of isolating the last bit.</p>
+                </li>
+                <li>
+                    Differentiate between tree and graphs and their traversals. The applications of each.
+                    <p class="ans">Trees and graphs are both structures used to organize data, but they differ in many ways. A tree is a hierarchical structure with one root node and no cycles, whereas a graph is a set of nodes connected together by edges, and it can have cycles.
+                        <br>Tree traversal:<br> 1. Pre-order<br> 2. In-order<br> 3. Post-order<br><br>
+                        Graph traversal:<br> 1. DFS (Depth First Search): Brave Traversal<br> 2. BFS (Breadth First Search): Cautious Traversal<br><br>
+                        Trees are used for representing hierarchical data and for searching the shortest path and sorting. Graphs are used in applications for finding the shortest path.</p>
+                </li>
+                <li>
+                    Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.
+                    <p class="ans">Sorting and searching algorithms are important for organizing and finding data efficiently, with many real-world uses. Sorting algorithms like quick sort and merge sort arrange data in order, which is helpful in tasks like organizing products for e-commerce websites. Searching algorithms like binary search locate specific items, used in search engines and e-commerce websites.</p>
+                </li>
+                <li>
+                    Discuss the importance of graph algorithms with respect to spanning trees and shortest paths.
+                    <p class="ans">Graphs are important with respect to spanning trees to calculate MST (Minimum Spanning Tree), which is used to connect all the nodes in the graph with the least cost, making it useful for laying roads and pipelines. Shortest path algorithms, such as Dijkstra's, help in finding the quickest or shortest way to travel between nodes, which is useful in GPS navigation apps.</p>
+                </li>
+                <li>
+                    Discuss the different studied algorithm design techniques.
+                    <p class="ans">Different algorithms studied:<br>1. Backtracking: It involves exploring all possible solutions and pruning the ones that do not lead to a solution, learned with the example of the N-queens problem.<br><br>2. Sorting Algorithms: <br> i. Divide and conquer: Quick and Merge Sort<br> ii. Comparison-Based: Selection Sort, Insertion Sort, Bubble Sort.<br><br> 3. Brute force: Solving a problem by trying all possible solutions one-by-one.<br><br> 4. String search algorithms: <br> i. Boyer-Moore<br> ii. Knuth-Morris-Pratt<br> iii. Rabin-Karp<br><br> 5. Shortest path algorithms: <br> i. Dijkstra's<br> ii. Floyd's<br> iii. Warshall's<br> iv. Prim's</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="case-breakdown">
+        <h2 class="breakdown-head">Detailed Breakdown Of Business Ideas</h2>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Affordable Clean Energy Solutions</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            Providing Affordable Clean Energy Solutions is 
+                            necessary for a developing city as it promotes 
+                            sustainable development and reduces the dependency
+                             on fossil fuels. This also supports economic growth
+                            by creating job opportunities and provides a reliable, 
+                            long term cost efficient source of energy.  
+
+                        </li>
+                        <li>
+                            For implementing an Affordable Clean Energy Solutions business, 
+                            there are various different algorithms that can be used to make 
+                            the business run more efficiently. We can represent the whole distribution
+                            network as a graph with nodes as power grids and houses to which the energy 
+                            must be supplied, and the routes for this transmission are the edges.
+                        </li>
+                        <li>
+                            We can make use of <b>Prim's algorithm</b> to find the MST (minimum spanning tree) to 
+                            lay down the routes for energy distribution at the lowest cost possible. We are 
+                            using Prim's over Kruskal's as the graph network with the edges as cables between 
+                            the houses and power grids is dense with many cables (edges) hence, Prim's is a better
+                             algorithm to find the MST in a dense graph.
+                        </li>
+                        <li>
+                            Next, we can use shortest path algorithms like <b>Dijkstra's algorithm</b> to optimize the location 
+                            of the power grids, and for efficient distribution of energy to all the houses, we can take the
+                            main power station as the source node and apply Dijkstra's on the graph representation to find 
+                            the shortest paths to distribute the energy from the source.
+                        </li>
+                        <li>
+                            We can also use <b>sorting algorithms</b> to sort the areas based on the populations so that we can place
+                             an appropriately sized grid based on the population.
+                        </li>
+                        <li>
+                            A <b>look-up table</b> is a data structure that stores pre-computed values for fast retrieval. 
+                            This can be used to quickly access large amounts of data in the case of an energy distribution system. 
+                            It can be used to retrieve the energy consumption data of a particular consumer or a building. 
+                        </li>
+                        <li>
+                            <b>BIT or Fenwick tree</b> works on the concept of isolating the last bit and is efficient in the case of range queries.
+                            We are using BIT over segment trees as BIT is easier t implement due to its simple code.
+                            BIT can be used to calculate the total energy consumption of a consumer over a specific time period.  
+                        </li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Prim's Algorithm</b>
+                            <p>Prim's Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) 
+                                of a connected, undirected graph with weighted edges<br>
+                                Efficiency: O(|E|log|V|)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Prims%20Algorithm" class="code">Sample Code for Prim's Algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Dijkstra's algorithm</b>
+                            <p>Dijkstra's Algorithm is a well-known greedy algorithm used for finding the shortest path 
+                                from a source vertex to all other vertices in a weighted graph (where the weights are non-negative).<br>
+                                Efficiency: O(|E|log|V|)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Dijkstras%20Algorithm" class="code">Sample Code for Dijkstra's algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements in a specific order 
+                                (usually in ascending or descending order). <br>
+                                Efficiency: <br>
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Lookup table</b>
+                            <p>
+                                A lookup table is a data structure that is used to store pre-computed values for quick retrieval. <br>
+                                Efficiency: O(1)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Lookup-Table" class="code">Sample Code for Lookup table</a>
+                            </p>
+                        </li>
+                        <li><b>BIT or Fenwick tree</b>
+                            <p>BIT or Fenwick tree works on the concept of isolating the last bit and is 
+                                efficient in processing of range queries. <br>
+                                Efficiency: O(log n) <br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Fenwick%20Tree" class="code">Sample Code for BIT</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Education & Vocational Training Centers</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            As the city aims to become a self-sufficient, sustainable, and developed city, 
+                            educational institutions play an important role in this process. For this, it is 
+                            important to set up educational institutions across the entire city in such a way 
+                            that they are accessible to all the people.
+                        </li>
+                        <li>
+                            To achieve this, we will first analyze the total number of eligible students/people 
+                            who will access these educational institutions. This can be done using a <b>basic summation algorithm</b>. 
+                            The next step is to arrange the areas based on the number of people who will be accessing these institutions,
+                             which can be done using sorting algorithms such as <b>quick sort and merge sort</b>.
+
+                        </li>
+                        <li>Once we have sorted the areas based on population, we can finalize the locations and sizes of these institutions.
+                             The size of an institution will depend on the number of people attending it. Hence, larger institutions will be set 
+                             up in more populated areas based on the sorted list.
+                        </li>
+                        <li>The next step is to strategically select the locations of the institutions to ensure that they do not cause any harm to
+                             the environment in the process of building it. After selecting the locations for the educational institutions, the next 
+                             task is to set up a bus or pickup/drop service for all the students attending these institutions.
+                        </li>
+                        <li>For this, we need to design an efficient and cost-saving route for the buses to drop each student at their home. 
+                            This can be done using an <b>all-pairs shortest path algorithm like Floyd's algorithm.</b> We can consider the institution
+                             and the homes of each student as the nodes, and the roads connecting these areas as the edges, with weights as the travel cost.
+                              By applying <b>Floyd's algorithm</b> to this graph representation, we can design the most efficient route for dropping off each student.
+                        </li>
+                        <li>Now that we have set up institutions in strategic locations accessible to all, it is important for these institutions to function in an 
+                            organized manner to ensure a smooth and hassle-free experience. To achieve this, we need to keep a record of each student. This can be done
+                             using an <b>array of structures</b> to store student information such as name, roll number, contact details, etc.
+                        </li>
+                        <li>For the admission process, we can use a <b>queue data structure</b> to provide admission on a first-come, first-served basis. Alternatively, we can 
+                            sort the students based on their marks using a <b>sorting technique</b> and then provide admission based on the marks obtained by each student.
+                        </li>
+                        <li>
+                            Other sensitive data regarding students, such as their Aadhaar number or parents' bank details, can be stored securely using <b>hashing algorithms.</b>
+                        </li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Basic summation algorithm</b>
+                            <p>Calculates the sum of all the elements of an Array.
+                                Efficiency: O(1)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/blob/d85d72bbe8b0fc7c430c855b9b817b860b716ead/Basic%20Operations/Sum%20of%20elements%20of%20Array.cpp" class="code">Sample Code for Basic summation</a>
+                            </p>
+                        </li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements 
+                                in a specific order (usually in ascending or descending order).<br>
+                                Efficiency: 
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Floyd's algorithm</b>
+                            <p>The Floyd-Warshall algorithm is an algorithm used to find the shortest paths 
+                                between all pairs of nodes in a weighted graph.<br>
+                                Efficiency: O(n^3)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Floyds%20Algorithm" class="code">Sample Code for Floyd's algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Array of structures</b>
+                            <p>An array of structures is a collection of multiple structure variables stored sequentially in memory.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/590680d9c376432fa276ad23a0e4fb9afe55d950/Array%20Of%20Structures" class="code">Sample Code for Array of structures</a>
+                            </p>
+                        </li>
+                        <li><b>Queue data structure</b>
+                            <p>A queue is a linear data structure that follows the FIFO (First In, First Out) principle. This means that 
+                                the element added first will be removed first.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Queue" class="code">Sample Code for Basic Queue</a>
+                            </p>
+                        </li>
+                        <li><b>Hashing algorithms</b>
+                            <p>Hashing algorithms are methods used to map data (such as a string, number, or any type of object) to a fixed-size 
+                                value called a hash value.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Hashing" class="code">Sample Code for Hashing algorithms</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Microfinance or Lending Services</h2>
+                <p>Micro-financing and lending services play an important role in the development of a city. They help people with low incomes access financial resources for housing improvements or purchases. This leads to the overall development of infrastructure in the city.
+
+                    To implement this, we first need to store all the customer data,
+                     for which we can use an <b>array of structures.</b> To ensure the correct
+                      order of loan distribution, we can use <b>priority queues based on heaps,</b> 
+                       distributing loans based on the urgency of the requirement. Another important
+                        factor to consider is the credit scores, which determine whether loans are approved.
+                         This can be done using <b>sorting algorithms</b> to sort the list based on credit scores.Further <b>hashing</b> can be used to store sensitive customer data securely.
+                         <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to 
+                                arrange elements in a specific order (usually in ascending or descending order).<br>
+                                Efficiency:<br>
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Array of structures</b>
+                            <p>An array of structures is a collection of multiple structure variables stored sequentially in memory.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/590680d9c376432fa276ad23a0e4fb9afe55d950/Array%20Of%20Structures" class="code">Sample Code for Array of structures</a>
+                            </p>
+                        </li>
+                        <li><b>Priority Queues</b>
+                            <p>
+                                A Priority Queue (PQ) is a type of data structure that stores elements with associated priorities. 
+                                In a priority queue, each element has a priority value, and the element with the highest priority is
+                                 dequeued first<br>
+                                 Efficiency: O(log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Priority%20Queue" class="code">Sample Code for Priority Queue</a>
+                            </p>
+                        </li>
+                        <li><b>Hashing algorithms</b>
+                            <p>Hashing algorithms are methods used to map data (such as a string, number, or any type of object) 
+                                to a fixed-size value called a hash value<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Hashing" class="code">Sample Code for Hashing algorithm</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">E-commerce & Online Marketplaces</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            E-commerce and online marketplaces play an important role 
+                            in boosting the economy of a city. They also make the lives of 
+                            people easier by providing doorstep deliveries. There are various
+                             algorithms that can be used to implement an online e-commerce 
+                             marketplace. 
+                        </li>
+                        <li>
+                            Firstly, we can use <b>binary search</b> to search for products from a list of different products. We can also use tries for the autocomplete feature during typing in the search bar.
+                        </li>
+                        <li>
+                            We can use <b>string matching algorithms like KMP and Rabin-Karp</b> to 
+                            search for names of the products efficiently in the database. The 
+                            next thing is that we can use <b>sorting algorithms</b> to sort the products
+                             based on prices, ratings, and popularity. We can use <b>recommendation
+                                engines</b> to recommend products to users based on their previous 
+                              purchases or viewed products. 
+                        </li>
+                        <li>
+                            Lastly, at the time of delivery, we can use shortest path algorithms like 
+                            <b>Dijkstra’s Algorithm</b> to optimize delivery routes. This can be done by
+                             considering the storage hub as the source node where all the products 
+                             have been collected from different parts of the country and are ready
+                              to be set out for delivery. The other nodes are the houses of the 
+                              customers to whom the products need to be delivered. The routes
+                               joining them are the edges, with weights as the cost of travel. 
+                        </li>
+                        <li>
+                            Now, by using <b>Dijkstra’s Algorithm</b>, we find the most efficient route to 
+                            deliver the products to the customers' houses.
+                        </li>
+                        <li><b>Arrays and lists</b> can be used for storing product lists, order details, user carts, or customer feedback.
+
+                        </li>
+                        <li><b>Stack </b>can be used to keep track of undo actions in the shopping cart and for implementing backtracking </li>
+                        <li><b>Union-Find </b> can be used for managing user groups or authentication-related tasks.</li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Binary Search</b>
+                            <p>Binary Search is an efficient algorithm for finding an item from a sorted list or array. <br>
+                                Efficiency:
+                                Best case: O(1)<br>
+                                Worst case & Avg case: O(log n)<br><br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Binary%20Search" class="code">Sample Code for Binary Search</a>
+                            </p>
+                        </li>
+                        <li><b>String Search:- KMP & Rabin Karp</b>
+                            <p>String search algorithms are used to find a substring or pattern inside a string or text.<br>
+                                Efficiency:
+                                KMP:<br>
+                                Best case:<br>
+                                Avg case:<br>
+                                worst case:<br><br>
+                                Rabin Karp:<br>
+                                Best case:<br>
+                                Avg case:<br>
+                                worst case:<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/String%20Search" class="code">Sample Code for String Search</a>
+                            </p>
+                        </li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements in
+                                a specific order (usually in ascending or descending order).<br>
+                                Efficiency: <br>
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Recommendation engines</b>
+                            <p>A recommendation engine (or recommendation system) is a type of software system that 
+                                suggests products, services, or content to users based on their preferences, behavior, or other data. <br><br>
+                                <a href="#kruskals" class="code">Sample Code for Recommendation engines</a>
+                            </p>
+                        </li>
+                        <li><b>Trie</b>
+                            <p>A Trie is a specialized tree-like data structure used for dealing with applications involving search operations
+                                 like autocomplete, dictionary lookups, and spell checking.<br>
+                                Efficiency: O(l) where l is length of string.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Trie" class="code">Sample Code for Trie</a>
+                            </p>
+                        </li>
+                        <li><b>Dijkstra's algorithm</b>
+                            <p>Dijkstra's Algorithm is a well-known greedy algorithm used for finding the shortest path 
+                                from a source vertex to all other vertices in a weighted graph (where the weights are non-negative).<br>
+                                Efficiency: O(|E|log|V|)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Dijkstras%20Algorithm" class="code">Sample Code for Dijkstra's algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Arrays & Lists</b>
+                            <p>An array is a collection of elements, typically of the same type, stored in contiguous memory locations. 
+                                A list is a more flexible data structure than an array, often allowing for dynamic resizing. Lists can 
+                                store elements of different types<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Linked%20List" class="code">Sample Code for Arrays & lists</a>
+                            </p>
+                        </li>
+                        <li><b>Stack</b>
+                            <p>A stack is a linear data structure that follows the Last In, First Out (LIFO) principle, meaning the last element added to the stack is the first one to be removed. <br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Stack" class="code">Sample Code for Stack</a>
+                            </p>
+                        </li>
+                        <li><b>Union-Find</b>
+                            <p>The Union-Find structure is particularly useful in applications where you need to efficiently manage and query dynamic connectivity, such as in graph algorithms 
+                                e.g: Kruskal's Minimum Spanning Tree algorithm and in network connectivity problems.<br>
+                                Efficiency: O(n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Unioin-Find" class="code">Sample Code for Union-Find</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Telecommunications Services</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            The first step is to identify the population density of each area.
+                             This can be achieved using sorting techniques, such as <b>merge sort 
+                                or quick sort</b>, to arrange the areas based on their population densities.
+                              Once the areas are sorted, telecommunication towers can be strategically 
+                              placed in locations that maximize network coverage, ensuring the towers
+                               provide service to as many people as possible. 
+
+                        </li>
+                        <li>
+                            After placing the towers, the next step is to connect them to houses and other
+                             towers through fiber optic cables. To do this efficiently, <b>Kruskal’s algorithm</b>
+                              can be used to find the Minimum Spanning Tree . The MST helps connect all
+                               nodes with the minimum total cost, reducing the expenses for laying cables.
+                        </li>
+                        <li>
+                            To manage the flow of messages , a <b>queue data structure</b> can be implemented. 
+                            Queues process messages in the order they are received , such that the sequence 
+                            of messages is maintained. This structure helps to organize message transfer 
+                            efficiently without delays or reordering.
+                        </li>
+                        <li>
+                            To protect the messages being transmitted across the network,<b> hashing </b>can be applied,
+                            by assigning a unique hash value to each message. This ensures that the message are transferred securely . 
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements in a 
+                                specific order (usually in ascending or descending order).<br>
+                                Efficiency:
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Queue Data structure</b>
+                            <p>A queue is a linear data structure that follows the FIFO (First In, First Out) principle. This means that the element added first will be removed first.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Queue" class="code">Sample Code for Queue</a>
+                            </p>
+                        </li>
+                        <li><b>Kruskal’s algorithm</b>
+                            <p>Kruskal's algorithm is a well-known greedy algorithm used to find the Minimum Spanning Tree (MST) 
+                                of a connected, undirected graph.<br>
+                                
+                                Efficiency:<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Kruskal's%20Algorithm" class="code">Sample Code for Kruskal’s algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Hashing algorithms</b>
+                            <p>Hashing algorithms are methods used to map data (such as a string, number, or any type of object) 
+                                to a fixed-size value called a hash value<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Hashing" class="code">Sample Code for Hashing algorithm</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section class="FHcase">
+        <h2 class="FHhead">Implemtation With File Handling</h2>
+        <div class="FHbox">
+            <h2>Education & Vocational Training Centers</h2>
+            <ul>
+                <li>Calculating Population of each Area<br><br>
+                    <a href="https://github.com/AmoghPai19/CityPlan_Indraprasth.gitub.io/tree/3d056a2d1b85387eb12f49d0e7b8da97a1ad2805/Codes%20Using%20File-Handling/Amogh/Educational%20Institutions/PopulationCalc" class="code">Population Calculation</a><br><br>
+                </li>
+                <li>Sorting the areas based on the population<br><br>
+                    <a href="https://github.com/AmoghPai19/CityPlan_Indraprasth.gitub.io/tree/3d056a2d1b85387eb12f49d0e7b8da97a1ad2805/Codes%20Using%20File-Handling/Amogh/Educational%20Institutions/Sorting" class="code">Area Sorting</a><br><br>
+                </li>
+                <li>Pick-N-Drop Service<br><br>
+                    <a href="https://github.com/AmoghPai19/CityPlan_Indraprasth.gitub.io/tree/3d056a2d1b85387eb12f49d0e7b8da97a1ad2805/Codes%20Using%20File-Handling/Amogh/Educational%20Institutions/Pick-N-Drop%20Service" class="code">Route Calculation</a><br><br>
+
+                </li>
+                <li>
+                    Student Admission<br><br>
+                    <a href="https://github.com/AmoghPai19/CityPlan_Indraprasth.gitub.io/tree/3d056a2d1b85387eb12f49d0e7b8da97a1ad2805/Codes%20Using%20File-Handling/Amogh/Educational%20Institutions/Admissions" class="code">Admission Queue</a><br><br>
+                </li>
+                <li>
+                    Student information storage<br><br>
+                    <a href="https://github.com/AmoghPai19/CityPlan_Indraprasth.gitub.io/tree/3d056a2d1b85387eb12f49d0e7b8da97a1ad2805/Codes%20Using%20File-Handling/Amogh/Educational%20Institutions/StudentInfo" class="code">Student structure</a><br><br>
+                </li>
+            </ul>
+        </div>
+        
+
+    </section>
+</body>
+</html>
+
