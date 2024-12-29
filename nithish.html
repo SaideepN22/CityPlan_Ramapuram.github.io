@@ -85,40 +85,118 @@
                 </li>
                 <li>
                     What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth.
-                    <p class="ans">Space Complexity: Is the extra space taken by an algorithm to execute. Time complexity: Time taken by an algorithm to execute is called time complexity. Space and time complexity are important for evaluating the efficiency of algorithms. They help programmers understand how an algorithm performs and whether it is suitable for specific applications. The orders of growth of an algorithm describe how time or space requirements grow as the input size increases.
-                        <br> O(1) -> constant order of growth <br> O(n) -> linear order of growth <br> O(log n) -> logarithmic order of growth
+                    <p class="ans">
+                        Space and time efficiency refer to how much memory it uses as the input size grows and how fast an algorithm runs. 
+                        Time efficiency ensures the program runs quickly, while space efficiency focuses on saving memory, which is especially important in resource-limited environments. 
+                        The different class of problem can be represented in form of graph as follows:
+                        <br>
+                            O(1): constant order of growth 
+                        <br>
+                            O(n): linear order of growth 
+                        <br>
+                            O(log n): logarithmic order of growth 
+                        <br>
+                            O(nlogn): Runtime increases more than linear but less than quadratic with input size.
+                        <br>
+                            O(n2): Runtime increases quadratically.
+                        <br>
+                            O(n3): Runtime increases cubic.
+                        <br>
+                            O(2^n): The runtime grows exponentially.
+                        <br>
+                            O(n!): The runtime grows extremely fast.
                     </p>
                 </li>
                 <li>
                     Take away from different design principles from chapter 2?
-                    <p class="ans">After studying different algorithms, the key ideas started to make sense. Learning how AVL trees and Red-Black trees maintain balance highlighted the importance of structures in data and efficient operations. Comparing brave and cautious travel to DFS and BFS in graph traversal showed how different strategies can solve problems effectively. Finally, understanding how various sorting algorithms work, such as dividing and merging or swapping elements, helped to understand their logic. In all, these concepts have provided a solid foundation for the principles of algorithms.</p>
+                    <p class="ans">
+                        The key takeaway from the design principles is how simple strategies can make complex problems more manageable and algorithms more efficient. 
+                        By using principles like decomposition, pattern recognition, and abstraction, we break down tasks into smaller parts. 
+                        Techniques like pruning (in N-queens) and lazy propagation (in segment trees) optimize resource use, eliminating unnecessary steps or delaying updates until needed. 
+                        Hierarchical order (in BST) and level order traversal (in BFS) help us process data effectively. 
+                        Pre-computing results, like in lookup tables, simplifies repeated operations. 
+                        Using parental dominance in heaps and bit manipulation in Fenwick trees speeds up calculations. 
+                        Finally, DFS and BFS teach us to navigate graphs with careful traversal. 
+                        All these principles combine to create more efficient algorithms.
+                    </p>
                 </li>
                 <li>
                     The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)
-                    <p class="ans">Tree data structures help organize hierarchical data efficiently and solve various problems. Binary search trees improve searching by ordering the roots, but they are not balanced. A 2-3 tree is a self-balancing tree designed to keep operations efficient by keeping all leaf nodes at the same level, but this still introduces skewness in the tree. Hence, we moved towards the AVL tree, which was balanced based on a balancing factor and rotations. Further, to reduce the number of rotations, we moved to the Red-Black tree. Heap is a complete binary tree that ensures the heap property. Heaps are good for priority queues. A Trie is a tree data structure primarily used for storing strings. Tries are used for tasks like autocomplete and prefix search.</p>
+                    <p class="ans">
+                        Tree data structures are essential for organizing hierarchical data and optimizing operations like searching, sorting, and indexing. 
+                        A general tree provides flexibility for generic hierarchies but lacks efficiency. 
+                        Binary trees are foundational but can become inefficient if unbalanced. 
+                        Self-balancing trees like AVL and Red-Black trees ensure \(O(\log n)\) operations, with AVL trees being more strictly balanced and Red-Black trees easier to maintain during frequent updates. 
+                        Heaps are ideal for priority-based tasks (e.g., scheduling), while Tries excel in prefix searches and string operations, such as autocompletion. 
+                        Multiway trees like 2-3 trees offer consistent balancing, making them perfect for databases and file systems. 
+                        Each structure is tailored to specific scenarios, balancing trade-offs between speed, complexity, and memory usage.
+                    </p>
                 </li>
                 <li>
                     The need for array query algorithms and their implications. Their applications and principles need to be discussed.
-                    <p class="ans">Array queries are necessary for efficiently handling large amounts of data with frequent updates. Lookup tables are good for precomputing and storing results to allow fast retrieval during range queries. Segment trees are versatile structures and useful for efficient updates. An alternative to these is BIT with simpler code for range queries, operating on the principle of isolating the last bit.</p>
+                    <p class="ans">
+                        Array query algorithms are essential for quickly answering questions about data, such as range sums, maximum values, or patterns, especially in large datasets. 
+                        They balance preprocessing, memory usage, and query speed to handle real-time applications like databases, gaming, analytics, and machine learning. 
+                        Techniques like prefix sums, Fenwick trees, segment trees, and sliding windows are widely used to optimize operations, ensuring fast responses and efficient updates. 
+                        These algorithms are foundational for modern systems where scalability and performance are critical.
+                    </p>
                 </li>
                 <li>
                     Differentiate between tree and graphs and their traversals. The applications of each.
-                    <p class="ans">Trees and graphs are both structures used to organize data, but they differ in many ways. A tree is a hierarchical structure with one root node and no cycles, whereas a graph is a set of nodes connected together by edges, and it can have cycles.
-                        <br>Tree traversal:<br> 1. Pre-order<br> 2. In-order<br> 3. Post-order<br><br>
-                        Graph traversal:<br> 1. DFS (Depth First Search): Brave Traversal<br> 2. BFS (Breadth First Search): Cautious Traversal<br><br>
-                        Trees are used for representing hierarchical data and for searching the shortest path and sorting. Graphs are used in applications for finding the shortest path.</p>
+                    <p class="ans">
+                        Tree <br>
+                        -A connected, acyclic graph with n nodes and n-1 edges. <br>
+                        -always has a root node. <br>
+                        -always connected. <br>
+                        -no cycles. <br>
+                        
+                       <br> Graphs <br>
+                        -Collection of vertices connected by edges, cyclic and even disconnected. <br>
+                        -no specific root unless mentioned. <br>
+                        -can be connected or disconnected. <br>
+                        -have cycles. <br>
+                        
+                        <br> Tree traversals <br>
+                        1. Pre order: Root,Left,Right <br>
+                        2. In order: Left, Root, Right <br>
+                        3. Post order: Left, Right, Root <br>
+                        <br> Eg: heap, BST for search, insert, delete <br>
+                        
+                        <br> Graph Traversals <br>
+                       <br> DFS: traverse as deep as possible before backtracking. <br>
+                         Eg: Road maps, Invitation problem. <br>
+                        
+                       <br> BFS: visit all neighbour nodes before moving. <br>
+                        Eg: Networks (social networks)
+                    </p>
                 </li>
                 <li>
                     Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.
-                    <p class="ans">Sorting and searching algorithms are important for organizing and finding data efficiently, with many real-world uses. Sorting algorithms like quick sort and merge sort arrange data in order, which is helpful in tasks like organizing products for e-commerce websites. Searching algorithms like binary search locate specific items, used in search engines and e-commerce websites.</p>
+                    <p class="ans">
+                        Sorting and searching algorithms are vital for organizing and retrieving data efficiently. 
+                        Sorting arranges data in a specific order, using techniques like quicksort for speed or counting sort for specific cases, while searching locates items, with binary search excelling on sorted datasets. 
+                        These algorithms power real-world applications like search engines, e-commerce filters, and route planning, ensuring quick and reliable results. 
+                        Together, they enable efficient data handling, forming the backbone of modern systems like databases, AI, and analytics.
+                    </p>
                 </li>
                 <li>
                     Discuss the importance of graph algorithms with respect to spanning trees and shortest paths.
-                    <p class="ans">Graphs are important with respect to spanning trees to calculate MST (Minimum Spanning Tree), which is used to connect all the nodes in the graph with the least cost, making it useful for laying roads and pipelines. Shortest path algorithms, such as Dijkstra's, help in finding the quickest or shortest way to travel between nodes, which is useful in GPS navigation apps.</p>
+                    <p class="ans">
+                        Graph algorithms, especially for spanning trees and shortest paths, are essential for optimizing real-world systems like networks, navigation, and logistics. 
+                        Spanning tree algorithms help efficiently connect all nodes with minimal cost, making them crucial for network design and broadcasting. 
+                        Shortest path algorithms, like Dijkstra’s, are used to find the fastest or most cost-effective route, impacting applications like GPS navigation, data routing, and supply chain management. 
+                        Together, these algorithms ensure efficient and cost-effective connectivity in fields like telecommunications, transportation, and resource management.
+                    </p>
                 </li>
                 <li>
                     Discuss the different studied algorithm design techniques.
-                    <p class="ans">Different algorithms studied:<br>1. Backtracking: It involves exploring all possible solutions and pruning the ones that do not lead to a solution, learned with the example of the N-queens problem.<br><br>2. Sorting Algorithms: <br> i. Divide and conquer: Quick and Merge Sort<br> ii. Comparison-Based: Selection Sort, Insertion Sort, Bubble Sort.<br><br> 3. Brute force: Solving a problem by trying all possible solutions one-by-one.<br><br> 4. String search algorithms: <br> i. Boyer-Moore<br> ii. Knuth-Morris-Pratt<br> iii. Rabin-Karp<br><br> 5. Shortest path algorithms: <br> i. Dijkstra's<br> ii. Floyd's<br> iii. Warshall's<br> iv. Prim's</p>
+                    <p class="ans">
+                        In class, we explored several design techniques, starting with backtracking, where we solved problems like the n-queens and subset generation by considering all possibilities and eliminating unnecessary ones. 
+                        We also learned about transform and conquer with AVL trees, heaps, and 2-3 trees. 
+                        Moving on to decrease and conquer, we studied graph traversals like BFS and DFS. 
+                        We covered divide and conquer through sorting algorithms and string matching techniques, including the Boyer-Moore algorithm, which uses space and time trade-offs. 
+                        Finally, we explored greedy algorithms, such as Prim’s, Kruskal’s, and Dijkstra’s, to find the shortest path in weighted graphs.
+                    </p>
                 </li>
             </ol>
         </div>
