@@ -76,49 +76,150 @@
                 <li>
                     What are the kinds of problems we see in nature? (iteration, recursion, backtracking)
                     <p class="ans">
-                        In nature, we can see problems being solved in ways similar to computational techniques like iteration, recursion, and backtracking. 
-                        For example, iteration shows up in things like the repeating cycles of seasons or the rise and fall of predator-prey populations. 
-                        Recursion is easy to spot in patterns like snowflakes, the way trees branch out, or how rivers split into smaller streams—all of them repeating the same shapes on different scales. 
-                        Backtracking happens when animals, like ants or rats, try one path to find food, hit a dead end, and go back to try another. 
-                        Nature uses these methods to adapt, solve problems, and make things work efficiently.
+                       <br>Nature presents numerous complex problems, many of which can be solved through computational techniques.
+                        The life cycle and food chain are examples of processes that can be modeled using recursion.
+                        <br>
+                        Predicting climate change, on the other hand, is best tackled with iteration due to its dynamic, evolving patterns.
+                         Bees, using backtracking, efficiently find the optimal foraging paths, ensuring maximum resource acquisition.
+                        <br>
+                        Similarly, plants exhibit self-organizing behavior, adjusting their growth patterns through backtracking to maximize sun exposure.
+                        These natural processes, when modeled computationally, provide valuable insights into optimization and problem-solving techniques in real-world applications.
                     </p>
                 </li>
                 <li>
                     What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth.
-                    <p class="ans">Space Complexity: Is the extra space taken by an algorithm to execute. Time complexity: Time taken by an algorithm to execute is called time complexity. Space and time complexity are important for evaluating the efficiency of algorithms. They help programmers understand how an algorithm performs and whether it is suitable for specific applications. The orders of growth of an algorithm describe how time or space requirements grow as the input size increases.
-                        <br> O(1) -> constant order of growth <br> O(n) -> linear order of growth <br> O(log n) -> logarithmic order of growth
+                    <p class="ans">
+                        <br>
+                        Time efficiency refers to how quickly an algorithm executes, while space efficiency measures the additional memory required during execution. Time efficiency is crucial in real-world applications, where faster algorithms are preferred. Space efficiency ensures optimal resource utilization, maximizing performance with minimal resources. 
+                        <br>
+                        - **O(1)**: Constant time complexity.
+                        <br>
+                            - **O(n)**: Linear time complexity.
+                        <br>
+                            - **O(log n)**: Logarithmic time complexity.
+                        <br>
+                            - **O(n log n)**: Slightly more than linear time, less than quadratic.
+                        <br> 
+                            -**O(n²)**: Quadratic time complexity.
+                        <br>
+                            - **O(n³)**: Cubic time complexity.
+                        <br>
+                            - **O(2^n)**: Exponential time complexity.
+                        <br>
+                            - **O(n!)**: Factorial time complexity, grows extremely fast.
                     </p>
                 </li>
                 <li>
                     Take away from different design principles from chapter 2?
-                    <p class="ans">After studying different algorithms, the key ideas started to make sense. Learning how AVL trees and Red-Black trees maintain balance highlighted the importance of structures in data and efficient operations. Comparing brave and cautious travel to DFS and BFS in graph traversal showed how different strategies can solve problems effectively. Finally, understanding how various sorting algorithms work, such as dividing and merging or swapping elements, helped to understand their logic. In all, these concepts have provided a solid foundation for the principles of algorithms.</p>
+                    <p class="ans"> 
+                    <br>
+                        The key takeaway from design principles is how simple concepts simplify complex problems, making algorithms more efficient.
+                        We break down problems using decomposition, pattern recognition, and abstraction to manage tasks effectively. 
+                    <br>
+                        Pruning (used in N-queens) and lazy propagation (used in segment trees) optimize resource usage. Pruning eliminates non-viable solutions, while lazy propagation delays updates until necessary. 
+                    Hierarchical order (BST) and level-order traversal (BFS) aid in data processing. Pre-computing (lookup tables) simplifies problems by storing results of frequent operations. 
+                    <br>
+                    Heaps use parental dominance to maintain efficiency. Bit manipulation (Fenwick tree) speeds up computations. DFS and BFS implement brave and cautious traversal for effective graph navigation. Overall, these principles create efficient algorithms.
                 </li>
                 <li>
                     The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)
-                    <p class="ans">Tree data structures help organize hierarchical data efficiently and solve various problems. Binary search trees improve searching by ordering the roots, but they are not balanced. A 2-3 tree is a self-balancing tree designed to keep operations efficient by keeping all leaf nodes at the same level, but this still introduces skewness in the tree. Hence, we moved towards the AVL tree, which was balanced based on a balancing factor and rotations. Further, to reduce the number of rotations, we moved to the Red-Black tree. Heap is a complete binary tree that ensures the heap property. Heaps are good for priority queues. A Trie is a tree data structure primarily used for storing strings. Tries are used for tasks like autocomplete and prefix search.</p>
+                    <p class="ans">
+                        <br>
+                        A binary search tree efficiently supports operations like searching and insertion. 2-3 trees maintain balanced depth, ensuring optimal performance. AVL trees are self-balancing, automatically adjusting to maintain balance during insertions and deletions. 
+                        Red-black trees balance themselves using color coding, ensuring efficient operations. Heaps maintain parental dominance, making deletions quick and efficient.
+                        <br>
+                        Tries optimize search performance by using prefix-based searches, enabling fast lookups in applications like autocomplete and dictionary searches. 
+                        Each of these data structures offers unique advantages, contributing to the overall efficiency and effectiveness of algorithmic solutions.
                 </li>
                 <li>
                     The need for array query algorithms and their implications. Their applications and principles need to be discussed.
-                    <p class="ans">Array queries are necessary for efficiently handling large amounts of data with frequent updates. Lookup tables are good for precomputing and storing results to allow fast retrieval during range queries. Segment trees are versatile structures and useful for efficient updates. An alternative to these is BIT with simpler code for range queries, operating on the principle of isolating the last bit.</p>
+                    <p class="ans">
+                        <br>
+                        Array query algorithms are essential for efficiently searching, updating, and querying elements in an array, especially when dealing with large datasets. These algorithms are crucial for accessing data within specific intervals and ensuring quick responses for range-based queries.
+                        <br>
+                        Lookup Tables: A lookup table is a data structure used to efficiently answer range queries in a dataset. It pre-computes values such as minimum, maximum, or sum for various intervals. By storing these results, lookup tables save computation time during repeated queries, utilizing the concept of pre-computing for faster access.
+                        <br>
+                        Segment Trees: Segment trees divide an array into segments and represent it as a binary tree using a bottom-up approach. They are particularly effective for range queries and updates. Segment trees utilize the principle of lazy propagation, storing changes and only applying them when needed, optimizing performance and reducing unnecessary updates.
+                        <br>
+                        Sparse Tables: Sparse tables are designed for fast querying of static data. They preprocess the data, allowing for efficient range queries, particularly useful for minimum or maximum queries on immutable datasets. The preprocessing ensures that subsequent queries can be answered in constant time.
+                        <br>
+                        Fenwick Trees (Binary Indexed Trees): Fenwick trees are used for efficient computation of cumulative sums, minimums, or maximums over ranges of elements. Each node in a Fenwick tree stores information about a specific range, enabling fast updates and queries. The core principle used is bit manipulation, which helps in efficiently navigating the tree structure for quick computations</p>
                 </li>
                 <li>
                     Differentiate between tree and graphs and their traversals. The applications of each.
-                    <p class="ans">Trees and graphs are both structures used to organize data, but they differ in many ways. A tree is a hierarchical structure with one root node and no cycles, whereas a graph is a set of nodes connected together by edges, and it can have cycles.
-                        <br>Tree traversal:<br> 1. Pre-order<br> 2. In-order<br> 3. Post-order<br><br>
-                        Graph traversal:<br> 1. DFS (Depth First Search): Brave Traversal<br> 2. BFS (Breadth First Search): Cautious Traversal<br><br>
-                        Trees are used for representing hierarchical data and for searching the shortest path and sorting. Graphs are used in applications for finding the shortest path.</p>
+                    <p class="ans">
+                        Trees and graphs are data structures that organize data differently. A tree is a hierarchical structure with a single root and no cycles, ideal for representing relationships like family trees or organizational charts. 
+                        A graph consists of nodes connected by edges and can have cycles, making it suitable for networks, social connections, or road maps.
+                        <br>
+                        ->Tree Traversal:
+                        <br>
+                        1. Pre-order: Visit the root node first, then traverse the left subtree, followed by the right subtree.
+                        <br>
+                        2. In-order: Traverse the left subtree first, then visit the root node, and finally, traverse the right subtree.
+                        <br>
+                        3. Post-order: Traverse the left subtree first, then the right subtree, and visit the root node last.
+                        <br>
+                        ->Graph Traversal:
+                        <br>
+                        1. DFS (Depth First Search): A "brave" traversal method that explores as far down a branch as possible before backtracking.
+                        <br>
+                        2. BFS (Breadth First Search): A "cautious" traversal method that explores all neighbors of a node before moving to the next level.
+                        <br>
+                        ->Applications of Trees and Graphs:
+                        <br>
+                        1. Trees: Used for representing hierarchical data, such as file systems, organizational charts, and decision trees. They are also efficient for searching and sorting (e.g., binary search trees).
+                        <br>
+                        2. Graphs: Ideal for applications that require finding the shortest path, such as network routing, social media connections, or transportation maps. Graph algorithms like Dijkstra’s or A* are commonly used to solve pathfinding problems.
                 </li>
                 <li>
                     Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.
-                    <p class="ans">Sorting and searching algorithms are important for organizing and finding data efficiently, with many real-world uses. Sorting algorithms like quick sort and merge sort arrange data in order, which is helpful in tasks like organizing products for e-commerce websites. Searching algorithms like binary search locate specific items, used in search engines and e-commerce websites.</p>
+                    <p class="ans">
+                        Sorting and searching algorithms are essential for efficiently managing and retrieving data.
+                        <br>
+                        ->Sorting Algorithms:
+                        <br>
+                        ⸳Bubble Sort: Compares and swaps adjacent elements, but is inefficient for large datasets.
+                        <br>
+                        ⸳Selection Sort: Improves on bubble sort by swapping only the minimum element in each pass.
+                        <br>
+                        ⸳Insertion Sort: Inserts elements in the correct position, effective for small or partially sorted data.
+                        <br>
+                        ⸳Merge Sort and Quick Sort: Both use the divide-and-conquer principle, dividing data into smaller parts and sorting them, offering better efficiency with O(n log n) time complexity.
+                        <br>
+                        ⸳Heap Sort: Builds a heap and sorts by repeatedly extracting the maximum or minimum element, also with O(n log n) time complexity.
+                        <br>
+                        ->Searching Algorithms:
+                        <br>
+                        ⸳Linear Search: Checks each element sequentially, suitable for unsorted or small datasets.
+                        <br>
+                        ⸳Binary Search: Efficiently searches sorted data by dividing the dataset in half, with a time complexity of O(log n).
+                        <br>
+                        ->Real-World Applications:
+                        Sorting and searching algorithms are used in various applications like sorting product listings, ranking search results, filtering preferences, and quickly retrieving information from large datasets, such as in e-commerce platforms, search engines, and data analysis.
                 </li>
                 <li>
                     Discuss the importance of graph algorithms with respect to spanning trees and shortest paths.
-                    <p class="ans">Graphs are important with respect to spanning trees to calculate MST (Minimum Spanning Tree), which is used to connect all the nodes in the graph with the least cost, making it useful for laying roads and pipelines. Shortest path algorithms, such as Dijkstra's, help in finding the quickest or shortest way to travel between nodes, which is useful in GPS navigation apps.</p>
+                    <p class="ans">
+                        Graph algorithms are essential for solving optimization problems, especially when it comes to minimizing traversal costs. Algorithms like Kruskal's and Prim's are used to find the minimum spanning tree, which reduces the cost of traversal. 
+                        These are applied in real-world scenarios such as laying cables, pipelines, and developing networks. For navigating the shortest path, algorithms like Dijkstra's and Floyd-Warshall are used, which are crucial for network routing, mapping, and navigation. 
+                        By leveraging spanning trees and shortest path algorithms, we can enhance efficiency and reduce costs in various applications.
                 </li>
                 <li>
                     Discuss the different studied algorithm design techniques.
-                    <p class="ans">Different algorithms studied:<br>1. Backtracking: It involves exploring all possible solutions and pruning the ones that do not lead to a solution, learned with the example of the N-queens problem.<br><br>2. Sorting Algorithms: <br> i. Divide and conquer: Quick and Merge Sort<br> ii. Comparison-Based: Selection Sort, Insertion Sort, Bubble Sort.<br><br> 3. Brute force: Solving a problem by trying all possible solutions one-by-one.<br><br> 4. String search algorithms: <br> i. Boyer-Moore<br> ii. Knuth-Morris-Pratt<br> iii. Rabin-Karp<br><br> 5. Shortest path algorithms: <br> i. Dijkstra's<br> ii. Floyd's<br> iii. Warshall's<br> iv. Prim's</p>
+                    <p class="ans">
+                        In class, we first learned about the design technique of backtracking, which involves solving problems like the N-Queens problem and subset generation. We explore all possible solutions and eliminate those that aren’t needed. 
+                        Along with this, we studied transform and conquer, where we learned about data structures like AVL trees, heaps, and 2-3 trees that help in optimizing solutions.
+                        <br>
+                        Next, we encountered the decrease and conquer technique, especially in graph traversal. There are two main ways to traverse a graph:
+                        <br>
+                        -Breadth-First Search (BFS), where we visit all the nodes directly connected to the source first and then move on to the next level of nodes.
+                        <br>
+                        -Depth-First Search (DFS), where we explore one path fully before backtracking to explore other paths.
+                        <br>
+                        We also looked at divide and conquer in sorting algorithms, where we break the problem into smaller parts, solve each, and then combine the results. In string matching, we explored design principles like brute-force, hashing, and algorithms like Boyer-Moore, which balance space and time efficiently. 
+                        Finally, we studied greedy algorithms, such as Prim’s, Kruskal’s, and Dijkstra’s, to find the shortest path in a weighted graph.
+                        <br>
+                        This approach simplifies complex problems by breaking them down into manageable parts and choosing the most efficient solutions.
                 </li>
             </ol>
         </div>
