@@ -196,47 +196,34 @@
                     </ul>
                     <h3>Algorithms/Data-structures Used:</h3>
                     <ul>
-                        <li><b>Prim's Algorithm</b>
-                            <p>Prim's Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) 
-                                of a connected, undirected graph with weighted edges<br>
-                                Efficiency: O(|E|log|V|)<br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Prims%20Algorithm" class="code">Sample Code for Prim's Algorithm</a>
-                            </p>
-                        </li>
-                        <li><b>Dijkstra's algorithm</b>
-                            <p>Dijkstra's Algorithm is a well-known greedy algorithm used for finding the shortest path 
-                                from a source vertex to all other vertices in a weighted graph (where the weights are non-negative).<br>
-                                Efficiency: O(|E|log|V|)<br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Dijkstras%20Algorithm" class="code">Sample Code for Dijkstra's algorithm</a>
-                            </p>
-                        </li>
-                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
-                            <p>Sorting algorithms are fundamental algorithms used to arrange elements in a specific order 
-                                (usually in ascending or descending order). <br>
-                                Efficiency: <br>
-                                Quick Sort:<br>
-                                Best case: O(n log n)<br>
-                                Avg case: O(1.38n log n)<br>
-                                Worst case: O(n^2)<br><br>
-
-                                Merge Sort:O(n log n)<br><br>
-
-                                Heap Sort: O(n log n)<br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
-                            </p>
-                        </li>
-                        <li><b>Lookup table</b>
+                        <li><b>Time Series Data Structures (e.g., Arrays, Linked Lists):</b>
                             <p>
-                                A lookup table is a data structure that is used to store pre-computed values for quick retrieval. <br>
-                                Efficiency: O(1)<br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Lookup-Table" class="code">Sample Code for Lookup table</a>
+                                Purpose: Power demand data is typically collected over time (minute-by-minute, hourly, or daily), and time-series data structures are ideal for storing and processing this data.
+                                Example: Arrays or linked lists can store the consumption data points across different time intervals (e.g., hourly electricity usage).
                             </p>
                         </li>
-                        <li><b>BIT or Fenwick tree</b>
-                            <p>BIT or Fenwick tree works on the concept of isolating the last bit and is 
-                                efficient in processing of range queries. <br>
-                                Efficiency: O(log n) <br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Fenwick%20Tree" class="code">Sample Code for BIT</a>
+                        <li><b>Hash Tables</b>
+                            <p>
+                                Purpose: Efficient retrieval of power demand data based on specific keys (e.g., locations, time periods, customer types).
+                                Example: Storing key-value pairs where the key could be a timestamp or customer ID, and the value is the power consumption for that specific time or customer.
+                            </p>
+                        </li>
+                        <li><b>Graphs</b>
+                            <p>
+                                Purpose: Used for modeling energy networks, grid systems, and smart grid interactions (nodes represent power sources or consumers, edges represent the transmission lines or connections).
+                                Example: Modeling the power flow in a grid or the interactions between different buildings or sectors.
+                            </p>
+                        </li>
+                        <li><b>Heaps (Priority Queues):</b>
+                            <p>
+                                Purpose: Useful for scheduling or managing peak load times by storing time intervals or energy usage values that require attention.
+                                Example: Managing and sorting peak demand times where higher loads need to be prioritized for optimization.
+                            </p>
+                        </li>
+                        <li><b>Binary Search Trees (BST):</b>
+                            <p>
+                                Purpose: For efficient searching, insertion, and deletion of power demand records based on specific timestamps or identifiers.
+                                Example: Storing energy consumption records in a tree structure to easily search for records by time or location.
                             </p>
                         </li>
                     </ul>
@@ -333,49 +320,47 @@
                     </ul>
                     <h3>Algorithms/Data-structures Used:</h3>
                     <ul>
-                        <li><b>Basic summation algorithm</b>
-                            <p>Calculates the sum of all the elements of an Array.
-                                Efficiency: O(1)<br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/blob/d85d72bbe8b0fc7c430c855b9b817b860b716ead/Basic%20Operations/Sum%20of%20elements%20of%20Array.cpp" class="code">Sample Code for Basic summation</a>
+                        <li><b>Anomaly Detection:</b>
+                            <p>
+                                Z-Score: Detects outliers based on deviations from the mean.
+                                Isolation Forest: Efficient for high-dimensional datasets, isolates anomalies.
+                                Autoencoders: Detects anomalies by reconstructing input data and identifying errors.
+                                Clustering (e.g., K-Means, DBSCAN): Identifies outliers by grouping similar data points.
                             </p>
                         </li>
-                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
-                            <p>Sorting algorithms are fundamental algorithms used to arrange elements 
-                                in a specific order (usually in ascending or descending order).<br>
-                                Efficiency: 
-                                Quick Sort:<br>
-                                Best case: O(n log n)<br>
-                                Avg case: O(1.38n log n)<br>
-                                Worst case: O(n^2)<br><br>
-
-                                Merge Sort:O(n log n)<br><br>
-
-                                Heap Sort: O(n log n)<br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
+                        <li><b>Predictive Analytics and Forecasting:</b>
+                            <p>
+                                Linear Regression: Predicts future values based on linear relationships.
+                                ARIMA: Time-series forecasting model, ideal for univariate data.
+                                LSTM: Neural network for sequential data prediction.
+                                Random Forest: Handles both regression and classification tasks for forecasting.
                             </p>
                         </li>
-                        <li><b>Floyd's algorithm</b>
-                            <p>The Floyd-Warshall algorithm is an algorithm used to find the shortest paths 
-                                between all pairs of nodes in a weighted graph.<br>
-                                Efficiency: O(n^3)<br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Floyds%20Algorithm" class="code">Sample Code for Floyd's algorithm</a>
+                        <li><b>Optimization:</b>
+                            <p>
+                                Linear Programming (LP): Maximizes/minimizes objectives under constraints.
+                                Genetic Algorithms: Heuristic search for complex optimization problems.
+                                Simulated Annealing: Finds approximate solutions for large systems.
+                                Particle Swarm Optimization (PSO): Solves multi-dimensional optimization problems.
                             </p>
                         </li>
-                        <li><b>Array of structures</b>
-                            <p>An array of structures is a collection of multiple structure variables stored sequentially in memory.<br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/590680d9c376432fa276ad23a0e4fb9afe55d950/Array%20Of%20Structures" class="code">Sample Code for Array of structures</a>
+                        <li><b>Control Algorithms:</b>
+                            <p>
+                                PID Controller: Adjusts system parameters (e.g., temperature, energy).
+                                Fuzzy Logic Control: Handles imprecise data with approximate reasoning.
+                                Model Predictive Control (MPC): Predicts and adjusts system behavior.
                             </p>
                         </li>
-                        <li><b>Queue data structure</b>
-                            <p>A queue is a linear data structure that follows the FIFO (First In, First Out) principle. This means that 
-                                the element added first will be removed first.<br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Queue" class="code">Sample Code for Basic Queue</a>
+                        <li><b>Decision-Making:</b>
+                            <p>
+                                Markov Decision Process (MDP): Models decision-making under uncertainty.
+                                Q-Learning: Reinforcement learning algorithm for dynamic systems adjustments.
                             </p>
                         </li>
-                        <li><b>Hashing algorithms</b>
-                            <p>Hashing algorithms are methods used to map data (such as a string, number, or any type of object) to a fixed-size 
-                                value called a hash value.<br><br>
-                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Hashing" class="code">Sample Code for Hashing algorithms</a>
+                        <li><b>Trees and Tries:</b>
+                            <p>
+                                Decision Trees: Used in decision-making algorithms.
+                                K-D Trees: Handles multi-dimensional data for systems with high-dimensional sensors.
                             </p>
                         </li>
                     </ul>
