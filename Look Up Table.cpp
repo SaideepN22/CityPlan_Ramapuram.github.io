@@ -10,10 +10,11 @@ struct data {
 
 class lookuptable {
 public:
-    data bhoomika;
-    data amogh;
-    data saanvi;
-    data ramya;
+    data Nithish;
+    data Saideep;
+    data Swajeet;
+    data Pranav;
+    data Chirag;
     data match(string input);
     void display(data d);
     void addData();
@@ -21,10 +22,10 @@ public:
 };
 
 lookuptable::lookuptable() {
-    bhoomika = {"Bhoomika Malagar", 528, 'E'};
-    amogh = {"Amogh Pai", 529, 'E'};
-    saanvi = {"Saanvi Shetty", 509, 'E'};
-    ramya = {"Ramya Rao", 538, 'E'};
+    bhoomika = {"Nithish", 528, 'E'};
+    amogh = {"Saideep", 529, 'E'};
+    saanvi = {"Swajeet", 509, 'E'};
+    ramya = {"Pranav", 538, 'E'};
 }
 
 data lookuptable::match(string input) {
