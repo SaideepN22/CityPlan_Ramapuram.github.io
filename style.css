@@ -115,8 +115,8 @@ td:hover {
     color: #ffffff;
 }
 
-/* Project Cards Section */
-.project-container {
+/* Floating Card Styles */
+.team-container, .business-ideas-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -124,7 +124,7 @@ td:hover {
     margin: 30px auto;
 }
 
-.project-card {
+.team-card, .business-card {
     flex: 1 1 calc(33.333% - 20px); /* Ensure three cards per row */
     background-color: #2b2b2b;
     color: white;
@@ -150,17 +150,17 @@ td:hover {
     }
 }
 
-.project-card:hover {
+.team-card:hover, .business-card:hover {
     transform: translateY(-10px); /* Lift card up on hover */
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
 /* Hover Effect - Apply when hovering over card */
-.project-card:hover::before {
+.team-card:hover::before, .business-card:hover::before {
     opacity: 1;
 }
 
-.project-card::before {
+.team-card::before, .business-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -197,7 +197,7 @@ td:hover {
         font-size: 28px;
     }
 
-    .project-card {
+    .team-card, .business-card {
         flex: 1 1 100%; /* Full width for smaller screens */
     }
 }
