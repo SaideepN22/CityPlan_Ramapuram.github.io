@@ -1,1 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">City Design</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </nav>
 
+    <!-- Business Ideas Section -->
+    <section class="business-ideas">
+        <h2 class="head">Identified Business Ideas</h2>
+        <div class="ideas-box">
+            
+            <div class="idea">
+                <h3>Power Demand Analysis</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <b>Relevance to SDG 7:</b> Efficient power demand analysis ensures that electricity supply meets demand without overproduction, reducing energy waste and costs.
+                        </li>
+                        <li>
+                            This business idea involves using data analytics and machine learning to monitor and predict electricity demand in specific areas. Accurate forecasting can help utility companies optimize energy distribution, minimize blackouts, and improve grid stability.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Renewable Energy Integration:</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <b>Relevance to SDG 7:</b> Promoting the use of renewable energy sources reduces reliance on fossil fuels, leading to cleaner energy systems.
+                        </li>
+                        <li>
+                            This idea focuses on integrating renewable energy (solar, wind, etc.) into the existing power grid. It could involve designing smart grid systems or microgrids that manage the variability of renewables while ensuring consistent energy supply to consumers.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Energy Efficiency Management:</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <b>Relevance to SDG 7:</b> Energy efficiency is critical to reducing energy consumption and associated costs while minimizing environmental impact.
+                        </li>
+                        <li>
+                            This business idea revolves around technologies or strategies to optimize energy use in homes, businesses, and industries. Examples include energy-efficient appliances, smart meters, and AI-driven systems that detect and eliminate energy wastage.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section class="Reflection">
+        <h2>Course  Learning Reflections</h2>
+        <div class="reflection-box">
+            <ol>
+                <li>
+                    What are the kinds of problems we see in nature? (iteration, recursion, backtracking)
+                    <p class="ans">
+                        In nature, we can see problems being solved in ways similar to computational techniques like iteration, recursion, and backtracking. 
+                        For example, iteration shows up in things like the repeating cycles of seasons or the rise and fall of predator-prey populations. 
+                        Recursion is easy to spot in patterns like snowflakes, the way trees branch out, or how rivers split into smaller streams—all of them repeating the same shapes on different scales. 
+                        Backtracking happens when animals, like ants or rats, try one path to find food, hit a dead end, and go back to try another. 
+                        Nature uses these methods to adapt, solve problems, and make things work efficiently.
+                    </p>
+                </li>
+                <li>
+                    What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth.
+                    <p class="ans">
+                        Space and time efficiency refer to how much memory it uses as the input size grows and how fast an algorithm runs. 
+                        Time efficiency ensures the program runs quickly, while space efficiency focuses on saving memory, which is especially important in resource-limited environments. 
+                        The different class of problem can be represented in form of graph as follows:
+                        <br>
+                            O(1): constant order of growth 
+                        <br>
+                            O(n): linear order of growth 
+                        <br>
+                            O(log n): logarithmic order of growth 
+                        <br>
+                            O(nlogn): Runtime increases more than linear but less than quadratic with input size.
+                        <br>
+                            O(n2): Runtime increases quadratically.
+                        <br>
+                            O(n3): Runtime increases cubic.
+                        <br>
+                            O(2^n): The runtime grows exponentially.
+                        <br>
+                            O(n!): The runtime grows extremely fast.
+                    </p>
+                </li>
+                <li>
+                    Take away from different design principles from chapter 2?
+                    <p class="ans">
+                        The key takeaway from the design principles is how simple strategies can make complex problems more manageable and algorithms more efficient. 
+                        By using principles like decomposition, pattern recognition, and abstraction, we break down tasks into smaller parts. 
+                        Techniques like pruning (in N-queens) and lazy propagation (in segment trees) optimize resource use, eliminating unnecessary steps or delaying updates until needed. 
+                        Hierarchical order (in BST) and level order traversal (in BFS) help us process data effectively. 
+                        Pre-computing results, like in lookup tables, simplifies repeated operations. 
+                        Using parental dominance in heaps and bit manipulation in Fenwick trees speeds up calculations. 
+                        Finally, DFS and BFS teach us to navigate graphs with careful traversal. 
+                        All these principles combine to create more efficient algorithms.
+                    </p>
+                </li>
+                <li>
+                    The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)
+                    <p class="ans">
+                        Tree data structures are essential for organizing hierarchical data and optimizing operations like searching, sorting, and indexing. 
+                        A general tree provides flexibility for generic hierarchies but lacks efficiency. 
+                        Binary trees are foundational but can become inefficient if unbalanced. 
+                        Self-balancing trees like AVL and Red-Black trees ensure \(O(\log n)\) operations, with AVL trees being more strictly balanced and Red-Black trees easier to maintain during frequent updates. 
+                        Heaps are ideal for priority-based tasks (e.g., scheduling), while Tries excel in prefix searches and string operations, such as autocompletion. 
+                        Multiway trees like 2-3 trees offer consistent balancing, making them perfect for databases and file systems. 
+                        Each structure is tailored to specific scenarios, balancing trade-offs between speed, complexity, and memory usage.
+                    </p>
+                </li>
+                <li>
+                    The need for array query algorithms and their implications. Their applications and principles need to be discussed.
+                    <p class="ans">
+                        Array query algorithms are essential for quickly answering questions about data, such as range sums, maximum values, or patterns, especially in large datasets. 
+                        They balance preprocessing, memory usage, and query speed to handle real-time applications like databases, gaming, analytics, and machine learning. 
+                        Techniques like prefix sums, Fenwick trees, segment trees, and sliding windows are widely used to optimize operations, ensuring fast responses and efficient updates. 
+                        These algorithms are foundational for modern systems where scalability and performance are critical.
+                    </p>
+                </li>
+                <li>
+                    Differentiate between tree and graphs and their traversals. The applications of each.
+                    <p class="ans">
+                        Tree <br>
+                        -A connected, acyclic graph with n nodes and n-1 edges. <br>
+                        -always has a root node. <br>
+                        -always connected. <br>
+                        -no cycles. <br>
+                        
+                       <br> Graphs <br>
+                        -Collection of vertices connected by edges, cyclic and even disconnected. <br>
+                        -no specific root unless mentioned. <br>
+                        -can be connected or disconnected. <br>
+                        -have cycles. <br>
+                        
+                        <br> Tree traversals <br>
+                        1. Pre order: Root,Left,Right <br>
+                        2. In order: Left, Root, Right <br>
+                        3. Post order: Left, Right, Root <br>
+                        <br> Eg: heap, BST for search, insert, delete <br>
+                        
+                        <br> Graph Traversals <br>
+                       <br> DFS: traverse as deep as possible before backtracking. <br>
+                         Eg: Road maps, Invitation problem. <br>
+                        
+                       <br> BFS: visit all neighbour nodes before moving. <br>
+                        Eg: Networks (social networks)
+                    </p>
+                </li>
+                <li>
+                    Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.
+                    <p class="ans">
+                        Sorting and searching algorithms are vital for organizing and retrieving data efficiently. 
+                        Sorting arranges data in a specific order, using techniques like quicksort for speed or counting sort for specific cases, while searching locates items, with binary search excelling on sorted datasets. 
+                        These algorithms power real-world applications like search engines, e-commerce filters, and route planning, ensuring quick and reliable results. 
+                        Together, they enable efficient data handling, forming the backbone of modern systems like databases, AI, and analytics.
+                    </p>
+                </li>
+                <li>
+                    Discuss the importance of graph algorithms with respect to spanning trees and shortest paths.
+                    <p class="ans">
+                        Graph algorithms, especially for spanning trees and shortest paths, are essential for optimizing real-world systems like networks, navigation, and logistics. 
+                        Spanning tree algorithms help efficiently connect all nodes with minimal cost, making them crucial for network design and broadcasting. 
+                        Shortest path algorithms, like Dijkstra’s, are used to find the fastest or most cost-effective route, impacting applications like GPS navigation, data routing, and supply chain management. 
+                        Together, these algorithms ensure efficient and cost-effective connectivity in fields like telecommunications, transportation, and resource management.
+                    </p>
+                </li>
+                <li>
+                    Discuss the different studied algorithm design techniques.
+                    <p class="ans">
+                        In class, we explored several design techniques, starting with backtracking, where we solved problems like the n-queens and subset generation by considering all possibilities and eliminating unnecessary ones. 
+                        We also learned about transform and conquer with AVL trees, heaps, and 2-3 trees. 
+                        Moving on to decrease and conquer, we studied graph traversals like BFS and DFS. 
+                        We covered divide and conquer through sorting algorithms and string matching techniques, including the Boyer-Moore algorithm, which uses space and time trade-offs. 
+                        Finally, we explored greedy algorithms, such as Prim’s, Kruskal’s, and Dijkstra’s, to find the shortest path in weighted graphs.
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+        <section class="case-breakdown">
+        <h2 class="breakdown-head">Detailed Breakdown Of Business Ideas</h2>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Power demand analysis.</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            Ensuring efficient power management is crucial for a growing city as it supports sustainable development and decreases reliance on non-renewable energy sources. 
+                            It fosters economic progress by generating employment opportunities and provides a dependable, long-term, cost-effective energy solution.  
+                        </li>
+                        <li>
+                            To implement a dynamic power management business, various algorithms can optimize the system’s efficiency. 
+                            The entire power distribution network can be modeled as a graph, where nodes represent energy sources and consumers, and the edges represent the power transmission lines. 
+                            These algorithms help ensure optimal energy flow, reduce waste, and improve overall system reliability.
+                        </li>
+                        <li>
+                            We can utilize Dijkstra's algorithm to optimize the energy distribution routes by finding the shortest path for energy flow, ensuring minimal energy loss and efficient use of resources. 
+                            Dijkstra's algorithm is more suitable than Prim's in this case because it focuses on optimizing the shortest and most efficient paths in a network, which is crucial in dynamic power management to maintain a balanced load and reduce power wastage in a complex network with varying demand.
+                        </li>
+                        <li>
+                            In dynamic power management, linked lists and graphs can be effectively used to manage energy distribution and optimize the flow of electricity across the network.
+                            <br>
+                            ->Linked Lists:
+                            <br>
+                            A linked list can be used to represent sequences of connected power consumers (such as houses or devices) that need to be powered. Here’s how it can be applied:
+                            <br>
+                            -Energy consumption tracking: A linked list can be used to store data about power consumption from multiple consumers in a sequence. Each node could represent an individual consumer, holding information such as power usage, location, and demand.
+                            <br>
+                            -Dynamic allocation of resources: Linked lists allow easy insertion and deletion of consumers, making it a flexible structure to manage energy supply in real-time based on changing demands.
+                            <br>
+                            ->Graphs:
+                            <br>
+                            Graphs are a more natural fit for modeling the entire power distribution network, including the relationships between power sources (e.g., power plants or grids) and consumers (e.g., houses, businesses).
+                            <br>
+                            -Nodes represent the power sources (e.g., power plants, substations) and consumers (e.g., homes, factories).
+                            <br>
+                            -Edges represent the power transmission lines, connecting power sources to consumers.
+                        </li>
+                        <li>
+                            We can also use <b>sorting algorithms</b> to arrange areas based on their populations, allowing us to strategically place power grids of appropriate sizes. 
+                            By sorting areas from highest to lowest population, we can ensure that larger grids are allocated to more densely populated regions, optimizing energy distribution and ensuring that resources are efficiently utilized based on demand. 
+                            This approach helps in balancing the load and ensuring reliable power supply to all areas.
+                        </li>
+                        <li>
+                            Spanning Tree Algorithms, such as **Prim’s** or **Kruskal’s**, are used to determine the most cost-effective routes for laying down cables or transmission lines in a power distribution network. 
+                            These algorithms help ensure that the infrastructure is built with the least amount of wiring or connections, minimizing costs while maintaining connectivity between all power sources and consumers. 
+                            By focusing on connecting all nodes with the minimum possible cost, spanning tree algorithms optimize both the cost of construction and the efficiency of the entire network, reducing unnecessary energy loss and improving the system's overall performance.
+                        </li>
+                        <li>
+                            A <b>look-up table</b> is a data structure that stores pre-calculated values for quick access. 
+                            In the context of dynamic power management, it can be used to swiftly retrieve data related to energy consumption patterns of specific consumers or buildings. 
+                            By storing energy usage statistics or historical consumption data, the look-up table enables fast decision-making for efficient energy distribution and load balancing, 
+                            reducing the need for real-time calculations and enhancing overall system performance.
+                        </li>
+                        <li>
+                            <b>BIT (Binary Indexed Tree)</b>, also known as a **Fenwick Tree**, operates on the concept of isolating the last bit and is highly efficient for range queries. 
+                            We prefer BIT over segment trees in dynamic power management because it is easier to implement and requires simpler code. 
+                            In this context, BIT can be used to quickly calculate the total energy consumption of a consumer or building over a specific time period, allowing for efficient tracking and adjustments in energy allocation across the network.
+                        </li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Prim's Algorithm</b>
+                            <p>Prim's Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) 
+                                of a connected, undirected graph with weighted edges<br>
+                                Efficiency: O(|E|log|V|)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Prims%20Algorithm" class="code">Sample Code for Prim's Algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Dijkstra's algorithm</b>
+                            <p>Dijkstra's Algorithm is a well-known greedy algorithm used for finding the shortest path 
+                                from a source vertex to all other vertices in a weighted graph (where the weights are non-negative).<br>
+                                Efficiency: O(|E|log|V|)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Dijkstras%20Algorithm" class="code">Sample Code for Dijkstra's algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements in a specific order 
+                                (usually in ascending or descending order). <br>
+                                Efficiency: <br>
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Lookup table</b>
+                            <p>
+                                A lookup table is a data structure that is used to store pre-computed values for quick retrieval. <br>
+                                Efficiency: O(1)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Lookup-Table" class="code">Sample Code for Lookup table</a>
+                            </p>
+                        </li>
+                        <li><b>BIT or Fenwick tree</b>
+                            <p>BIT or Fenwick tree works on the concept of isolating the last bit and is 
+                                efficient in processing of range queries. <br>
+                                Efficiency: O(log n) <br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Fenwick%20Tree" class="code">Sample Code for BIT</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Efficient Electricity Distribution:</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            As the city aims to become a self-sufficient, sustainable, and developed hub, efficient electricity distribution plays a crucial role in this process. 
+                            It is important to design the power grid infrastructure in such a way that electricity is reliably and efficiently delivered to all areas of the city. 
+                            This requires strategically placing power grids and transmission lines to ensure easy access to energy for every consumer, regardless of location, 
+                            and optimizing the distribution network to meet the growing demands of a developing urban environment.
+                        </li>
+                        <li>
+                           To achieve efficient electricity distribution, we will first analyze the total energy demand from all areas of the city. 
+                            This can be done using a <b>basic summation algorithm</b> to calculate the total consumption. 
+                            The next step is to prioritize areas based on their energy needs, which can be done using sorting algorithms like <b>quick sort</b> or <b>merge sort</b>. 
+                            By sorting regions according to their energy demand, we can strategically allocate resources and place power grids of appropriate sizes, 
+                            ensuring that energy distribution is both efficient and meets the requirements of each area.
+
+                        </li>
+                        <li>
+                            Once we have sorted the areas based on energy demand, we can finalize the locations and capacities of power grids. 
+                            The size of each grid will depend on the energy consumption of the area it serves. 
+                            Therefore, larger power grids will be placed in more energy-intensive areas, based on the sorted list. 
+                            This ensures that regions with higher demand are adequately supplied, optimizing the distribution network and minimizing energy loss, while maintaining a reliable power supply throughout the city.
+                        </li>
+                        <li>
+                            The next step in efficient electricity distribution is to strategically select the locations for power grids and transmission lines, 
+                            ensuring that their installation does not harm the environment. Once the grid locations are determined, the next task is to optimize the energy flow, 
+                            ensuring that power reaches all areas with minimal loss and maximum efficiency. This can be achieved by implementing advanced algorithms to manage the distribution network, 
+                            similar to setting up an efficient transportation service for educational institutions. By considering both environmental impact and energy efficiency, 
+                            the system ensures sustainability while meeting the city's growing energy needs.
+                        </li>
+                        <li>
+                            For efficient electricity distribution, we need to design optimal routes for energy flow, ensuring that power is delivered to each consumer in the most cost-effective manner. 
+                            This can be achieved using an <b>all-pairs shortest path algorithm like Floyd's algorithm</b>. 
+                            We can treat the power grids and consumers as nodes, with the transmission lines as edges, and the cost of energy delivery (e.g., power loss or operational cost) as the weights. 
+                            By applying <b>Floyd's algorithm</b> to this graph representation, we can determine the most efficient routes for electricity distribution, minimizing energy loss and optimizing overall system performance.
+                        </li>
+                        <li>
+                            Now that we have strategically placed power grids in key locations to ensure efficient electricity distribution, it is essential to manage the energy supply in an organized manner to ensure smooth and reliable service. 
+                            To achieve this, we need to keep a record of each energy consumer and their consumption patterns. This can be done using an <b>array of structures</b> to store details such as consumer ID, address, energy consumption history, 
+                            and payment status. This system will help manage the grid's load, track energy usage, and provide insights for optimizing future energy distribution.
+                        </li>
+                        <li>
+                            For managing electricity distribution, we can use a <b>queue data structure</b> to handle requests for energy supply on a first-come, first-served basis. 
+                            This ensures that consumers are connected to the grid in the order they request service. Alternatively, we can prioritize areas based on their energy consumption needs using a <b>sorting technique</b>,
+                            such as sorting by the highest demand, and then allocate energy resources accordingly. This ensures that areas with higher energy needs are addressed first, optimizing the use of available resources and balancing the load across the network.
+                        </li>
+                        <li>
+                            Other sensitive data regarding electricity consumers, such as their account numbers, billing information, or payment history, can be stored securely using <b>hashing algorithms</b>. 
+                            This ensures that sensitive information is encrypted and protected from unauthorized access. 
+                            Hashing algorithms provide a secure way to store and retrieve consumer data without exposing the original information,
+                            maintaining privacy while allowing efficient access when needed for billing, customer service, or monitoring energy usage.
+                        </li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Basic summation algorithm</b>
+                            <p>Calculates the sum of all the elements of an Array.
+                                Efficiency: O(1)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/blob/d85d72bbe8b0fc7c430c855b9b817b860b716ead/Basic%20Operations/Sum%20of%20elements%20of%20Array.cpp" class="code">Sample Code for Basic summation</a>
+                            </p>
+                        </li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements 
+                                in a specific order (usually in ascending or descending order).<br>
+                                Efficiency: 
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Floyd's algorithm</b>
+                            <p>The Floyd-Warshall algorithm is an algorithm used to find the shortest paths 
+                                between all pairs of nodes in a weighted graph.<br>
+                                Efficiency: O(n^3)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Floyds%20Algorithm" class="code">Sample Code for Floyd's algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Array of structures</b>
+                            <p>An array of structures is a collection of multiple structure variables stored sequentially in memory.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/590680d9c376432fa276ad23a0e4fb9afe55d950/Array%20Of%20Structures" class="code">Sample Code for Array of structures</a>
+                            </p>
+                        </li>
+                        <li><b>Queue data structure</b>
+                            <p>A queue is a linear data structure that follows the FIFO (First In, First Out) principle. This means that 
+                                the element added first will be removed first.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Queue" class="code">Sample Code for Basic Queue</a>
+                            </p>
+                        </li>
+                        <li><b>Hashing algorithms</b>
+                            <p>Hashing algorithms are methods used to map data (such as a string, number, or any type of object) to a fixed-size 
+                                value called a hash value.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Hashing" class="code">Sample Code for Hashing algorithms</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Energy Storage Optimization:</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            <b>Energy Storage Optimization</b> plays a crucial role in managing and distributing energy efficiently. 
+                            Various algorithms can be applied to optimize the storage of energy, such as <b>dynamic scheduling algorithms</b> to balance energy supply and demand, 
+                            and <b>route optimization algorithms</b> for efficient distribution. These algorithms ensure that energy is stored at optimal times when demand is low 
+                            and can be accessed quickly when demand rises, reducing energy loss and minimizing costs. By continuously monitoring and adjusting the storage system, 
+                            energy storage optimization contributes to a more reliable and sustainable energy infrastructure.
+                        </li>
+                        <li>
+                            For <b>Energy Storage Optimization</b>, we can use <b>binary search</b> to efficiently search for energy storage devices or resources from a list of available options, 
+                            reducing the time needed for retrieval. Additionally, we can apply <b>tries</b> to implement an autocomplete feature when searching for energy consumption patterns, system configurations, 
+                            or device specifications, improving user experience. This would help in quickly navigating through large datasets or system configurations related to energy storage, 
+                            ensuring more efficient management and retrieval of critical data in real-time.
+                        </li>
+                        <li>
+                            For <b>Energy Storage Optimization</b>, we can use <b>string matching algorithms like KMP and Rabin-Karp</b> to search for specific energy storage devices or configurations in a large database efficiently. 
+                            These algorithms can help quickly find relevant information about energy systems or equipment.
+                            Next, we can apply <b>sorting algorithms</b> to arrange energy storage options based on criteria such as efficiency, capacity, cost, and energy usage patterns. Additionally, <b>recommendation engines</b>
+                            can be utilized to suggest the most suitable energy storage solutions to users based on their past usage patterns or preferences, optimizing the decision-making process for energy management.
+                        </li>
+                        <li>
+                            For </b>Energy Storage Optimization</b>, we can use shortest path algorithms like <b>Dijkstra’s Algorithm</b> to optimize energy distribution routes. 
+                            In this case, the storage facility acts as the source node where all the energy is stored, ready for distribution. 
+                            The nodes represent various locations, such as homes or businesses, requiring energy, and the edges are the transmission lines connecting them, 
+                            with weights representing the cost or efficiency of energy transfer. By applying Dijkstra’s algorithm, 
+                            we can ensure that energy is delivered via the most cost-effective and efficient route, minimizing energy loss and optimizing the overall distribution process. 
+                        </li>
+                        <li>
+                          By using <b>sorting algorithms</b>, we can organize energy storage options, customer demand, or delivery priorities based on key factors like energy consumption, location, or urgency. 
+                            For example, sorting algorithms like **Quick Sort** or **Merge Sort** can be used to arrange delivery routes by distance, or sort energy storage solutions by capacity and efficiency. 
+                            This allows us to prioritize the most critical or high-demand locations for quicker delivery, ensuring that resources are distributed efficiently and in an optimized manner. 
+                            Sorting can significantly streamline the decision-making process and enhance the overall efficiency of energy distribution.
+                        </li>
+                        <li>
+                            <b>Arrays and lists</b> can be used for storing energy storage unit data, customer energy usage patterns, delivery schedules, or feedback on energy solutions. 
+                            Arrays can store data such as energy consumption records over time, while lists can be used to maintain dynamic data such as ongoing orders or customer feedback.
+                            These data structures enable efficient tracking, updating, and retrieval of information, ensuring smooth operation and optimization of energy storage and distribution processes.
+                        </li>
+                        <li>
+                            <b>Stack</b> can be used to track changes in energy consumption or storage configurations, allowing for easy undo actions and facilitating backtracking during the optimization of energy distribution.
+                        </li>
+                        <li>
+                            </b>Union-Find</b> can be used for managing energy distribution networks, helping to efficiently group connected power grids or storage units and track their relationships during optimization tasks.
+                        </li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Binary Search</b>
+                            <p>Binary Search is an efficient algorithm for finding an item from a sorted list or array. <br>
+                                Efficiency:
+                                Best case: O(1)<br>
+                                Worst case & Avg case: O(log n)<br><br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Binary%20Search" class="code">Sample Code for Binary Search</a>
+                            </p>
+                        </li>
+                        <li><b>String Search:- KMP & Rabin Karp</b>
+                            <p>String search algorithms are used to find a substring or pattern inside a string or text.<br>
+                                Efficiency:
+                                KMP:<br>
+                                Best case:<br>
+                                Avg case:<br>
+                                worst case:<br><br>
+                                Rabin Karp:<br>
+                                Best case:<br>
+                                Avg case:<br>
+                                worst case:<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/String%20Search" class="code">Sample Code for String Search</a>
+                            </p>
+                        </li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements in
+                                a specific order (usually in ascending or descending order).<br>
+                                Efficiency: <br>
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Recommendation engines</b>
+                            <p>A recommendation engine (or recommendation system) is a type of software system that 
+                                suggests products, services, or content to users based on their preferences, behavior, or other data. <br><br>
+                                <a href="#kruskals" class="code">Sample Code for Recommendation engines</a>
+                            </p>
+                        </li>
+                        <li><b>Trie</b>
+                            <p>A Trie is a specialized tree-like data structure used for dealing with applications involving search operations
+                                 like autocomplete, dictionary lookups, and spell checking.<br>
+                                Efficiency: O(l) where l is length of string.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Trie" class="code">Sample Code for Trie</a>
+                            </p>
+                        </li>
+                        <li><b>Dijkstra's algorithm</b>
+                            <p>Dijkstra's Algorithm is a well-known greedy algorithm used for finding the shortest path 
+                                from a source vertex to all other vertices in a weighted graph (where the weights are non-negative).<br>
+                                Efficiency: O(|E|log|V|)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Dijkstras%20Algorithm" class="code">Sample Code for Dijkstra's algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Arrays & Lists</b>
+                            <p>An array is a collection of elements, typically of the same type, stored in contiguous memory locations. 
+                                A list is a more flexible data structure than an array, often allowing for dynamic resizing. Lists can 
+                                store elements of different types<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Linked%20List" class="code">Sample Code for Arrays & lists</a>
+                            </p>
+                        </li>
+                        <li><b>Stack</b>
+                            <p>A stack is a linear data structure that follows the Last In, First Out (LIFO) principle, meaning the last element added to the stack is the first one to be removed. <br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Stack" class="code">Sample Code for Stack</a>
+                            </p>
+                        </li>
+                        <li><b>Union-Find</b>
+                            <p>The Union-Find structure is particularly useful in applications where you need to efficiently manage and query dynamic connectivity, such as in graph algorithms 
+                                e.g: Kruskal's Minimum Spanning Tree algorithm and in network connectivity problems.<br>
+                                Efficiency: O(n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Unioin-Find" class="code">Sample Code for Union-Find</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Telecommunications Services</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            The first step is to identify the population density of each area.
+                             This can be achieved using sorting techniques, such as <b>merge sort 
+                                or quick sort</b>, to arrange the areas based on their population densities.
+                              Once the areas are sorted, telecommunication towers can be strategically 
+                              placed in locations that maximize network coverage, ensuring the towers
+                               provide service to as many people as possible. 
+
+                        </li>
+                        <li>
+                            After placing the towers, the next step is to connect them to houses and other
+                             towers through fiber optic cables. To do this efficiently, <b>Kruskal’s algorithm</b>
+                              can be used to find the Minimum Spanning Tree . The MST helps connect all
+                               nodes with the minimum total cost, reducing the expenses for laying cables.
+                        </li>
+                        <li>
+                            To manage the flow of messages , a <b>queue data structure</b> can be implemented. 
+                            Queues process messages in the order they are received , such that the sequence 
+                            of messages is maintained. This structure helps to organize message transfer 
+                            efficiently without delays or reordering.
+                        </li>
+                        <li>
+                            To protect the messages being transmitted across the network,<b> hashing </b>can be applied,
+                            by assigning a unique hash value to each message. This ensures that the message are transferred securely . 
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements in a 
+                                specific order (usually in ascending or descending order).<br>
+                                Efficiency:
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Sorting%20Alogithms" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Queue Data structure</b>
+                            <p>A queue is a linear data structure that follows the FIFO (First In, First Out) principle. This means that the element added first will be removed first.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Queue" class="code">Sample Code for Queue</a>
+                            </p>
+                        </li>
+                        <li><b>Kruskal’s algorithm</b>
+                            <p>Kruskal's algorithm is a well-known greedy algorithm used to find the Minimum Spanning Tree (MST) 
+                                of a connected, undirected graph.<br>
+                                
+                                Efficiency:<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Kruskal's%20Algorithm" class="code">Sample Code for Kruskal’s algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Hashing algorithms</b>
+                            <p>Hashing algorithms are methods used to map data (such as a string, number, or any type of object) 
+                                to a fixed-size value called a hash value<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Hashing" class="code">Sample Code for Hashing algorithm</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section class="FHcase">
+        <h2 class="FHhead">Implemtation With File Handling</h2>
+        <div class="FHbox">
+            <h2>Education & Vocational Training Centers</h2>
+            <ul>
+                <li>Calculating Population of each Area<br><br>
+                    <a href="https://github.com/AmoghPai19/CityPlan_Indraprasth.gitub.io/tree/3d056a2d1b85387eb12f49d0e7b8da97a1ad2805/Codes%20Using%20File-Handling/Amogh/Educational%20Institutions/PopulationCalc" class="code">Population Calculation</a><br><br>
+                </li>
+                <li>Sorting the areas based on the population<br><br>
+                    <a href="https://github.com/AmoghPai19/CityPlan_Indraprasth.gitub.io/tree/3d056a2d1b85387eb12f49d0e7b8da97a1ad2805/Codes%20Using%20File-Handling/Amogh/Educational%20Institutions/Sorting" class="code">Area Sorting</a><br><br>
+                </li>
+                <li>Pick-N-Drop Service<br><br>
+                    <a href="https://github.com/AmoghPai19/CityPlan_Indraprasth.gitub.io/tree/3d056a2d1b85387eb12f49d0e7b8da97a1ad2805/Codes%20Using%20File-Handling/Amogh/Educational%20Institutions/Pick-N-Drop%20Service" class="code">Route Calculation</a><br><br>
+
+                </li>
+                <li>
+                    Student Admission<br><br>
+                    <a href="https://github.com/AmoghPai19/CityPlan_Indraprasth.gitub.io/tree/3d056a2d1b85387eb12f49d0e7b8da97a1ad2805/Codes%20Using%20File-Handling/Amogh/Educational%20Institutions/Admissions" class="code">Admission Queue</a><br><br>
+                </li>
+                <li>
+                    Student information storage<br><br>
+                    <a href="https://github.com/AmoghPai19/CityPlan_Indraprasth.gitub.io/tree/3d056a2d1b85387eb12f49d0e7b8da97a1ad2805/Codes%20Using%20File-Handling/Amogh/Educational%20Institutions/StudentInfo" class="code">Student structure</a><br><br>
+                </li>
+            </ul>
+        </div>
+        
+
+    </section>
+</body>
+</html>
