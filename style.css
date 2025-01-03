@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #1a1a1a; /* Darker background to enhance premium look */
+    background-color: #1a1a1a; /* Darker background to enhance futuristic look */
     color: #ffffff;
     line-height: 1.6;
     background-image: linear-gradient(to bottom, #1a1a1a, #333333);
@@ -78,7 +78,45 @@ body {
     animation: slideDown 1s ease-out;
 }
 
-/* Table Styles */
+/* Intro Section */
+.intro {
+    font-size: 20px;
+    color: #e0e0e0;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px 35px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.basic {
+    background-color: #1e1e1e;
+    color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 25px 40px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.basic:hover {
+    background-color: #444444;
+    transform: translateY(-5px);
+}
+
+.course-list li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -86,20 +124,16 @@ table {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    background-color: #1e1e1e;
 }
 
 th, td {
     padding: 15px;
     text-align: center;
     font-size: 16px;
-    font-weight: 500;
-    color: #ffffff;
-    border-bottom: 1px solid #333;
 }
 
 th {
-    background-color: #0077b6;
+    background-color: #00b4d8;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -107,71 +141,268 @@ th {
 
 td {
     background-color: #222;
-    transition: background-color 0.3s ease;
+    color: #fff;
 }
 
 td:hover {
     background-color: #008CBA;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in;
+}
+
+.section-intro {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Team Section */
+.team-section {
+    padding: 60px 20px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.team-member {
+    background-color: #000;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.member-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.member-usn, .member-skills {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Project Section */
+.project-section {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #444, #222);
     color: #ffffff;
 }
 
-/* Floating Card Styles */
-.team-container, .business-ideas-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 30px auto;
-}
-
-.team-card, .business-card {
-    flex: 1 1 calc(33.333% - 20px); /* Ensure three cards per row */
-    background-color: #2b2b2b;
-    color: white;
+.phases {
+    background-color: #222;
+    color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, background-color 0.3s ease;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.phases:hover {
+    transform: scale(1.05);
+    background-color: #008CBA;
+}
+
+.project-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 25px;
+    animation: slideDown 1.5s ease-out;
+}
+
+.project-description {
+    font-size: 22px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.project-link,
+.github {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 25px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    background-color: #00e5ff;
+}
+
+.project-link:hover,
+.github:hover {
+    background-color: #005f73;
+    transform: scale(1.1);
+}
+
+.project-features {
+    font-size: 22px;
+}
+
+.team-container-1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member-1 {
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    animation: float 3s ease-in-out infinite; /* Apply floating animation */
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* Floating Animation */
-@keyframes float {
-    0% {
+.team-member-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Business Ideas Section */
+.business-ideas {
+    padding: 3rem;
+    text-align: center;
+}
+
+.business-ideas h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.ideas-box {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 850px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.idea {
+    margin-bottom: 2rem;
+}
+
+.idea h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+}
+
+.idea p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.Reflection,
+.implementation {
+    padding: 2rem;
+    text-align: center;
+}
+
+.reflection-box,
+.implementation-box {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 850px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.Reflection li,
+.implementation li {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+}
+
+.Reflection p,
+.implementation p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
         transform: translateY(0);
     }
-    50% {
-        transform: translateY(-5px);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
     }
-    100% {
+    to {
         transform: translateY(0);
+        opacity: 1;
     }
-}
-
-.team-card:hover, .business-card:hover {
-    transform: translateY(-10px); /* Lift card up on hover */
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-}
-
-/* Hover Effect - Apply when hovering over card */
-.team-card:hover::before, .business-card:hover::before {
-    opacity: 1;
-}
-
-.team-card::before, .business-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(0, 204, 255, 0.1), rgba(255, 204, 0, 0.1));
-    z-index: 1;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-    pointer-events: none;
 }
 
 /* Responsive Design */
@@ -188,16 +419,16 @@ td:hover {
         width: 100%;
     }
 
-    .basic, .table {
+    .intro, .phases, .team-member, .basic, .questions {
         width: 90%;
         margin: 20px auto;
     }
 
-    .headings {
+    .headings, .section-title {
         font-size: 28px;
     }
 
-    .team-card, .business-card {
-        flex: 1 1 100%; /* Full width for smaller screens */
+    .project-description, .intro, .section-intro {
+        font-size: 16px;
     }
 }
