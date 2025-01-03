@@ -29,14 +29,14 @@ lookuptable::lookuptable() {
 }
 
 data lookuptable::match(string input) {
-    if (input == bhoomika.name)
-        return bhoomika;
-    if (input == amogh.name)
-        return amogh;
-    if (input == saanvi.name)
-        return saanvi;
-    if (input == ramya.name)
-        return ramya;
+    if (input == Nithish.name)
+        return Nithish;
+    if (input == Saideep.name)
+        return Saideep;
+    if (input == Swajeet.name)
+        return Swajeet;
+    if (input == Pranav.name)
+        return Pranav;
 
     return {"", 0, ' '};
 }
@@ -65,13 +65,13 @@ void lookuptable::addData() {
     cin >> div;
 
     if (name == bhoomika.name) {
-        bhoomika = {name, rno, div};
+        Nithish = {name, rno, div};
     } else if (name == amogh.name) {
-        amogh = {name, rno, div};
+        Saideep = {name, rno, div};
     } else if (name == saanvi.name) {
-        saanvi = {name, rno, div};
+        Swajeet = {name, rno, div};
     } else if (name == ramya.name) {
-        ramya = {name, rno, div};
+        Pranav = {name, rno, div};
     } else {
         cout << "Name not recognized. Data not added." << endl;
     }
