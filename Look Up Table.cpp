@@ -22,10 +22,11 @@ public:
 };
 
 lookuptable::lookuptable() {
-    bhoomika = {"Nithish", 528, 'E'};
-    amogh = {"Saideep", 529, 'E'};
-    saanvi = {"Swajeet", 509, 'E'};
-    ramya = {"Pranav", 538, 'E'};
+    Nithish = {"Nithish", 122, 'F'};
+    Saideep = {"Saideep", 134, 'F'};
+    Swajeet = {"Swajeet",132, 'F'};
+    Pranav  = {"Pranav",157, 'F'};
+    Chirag  = {"Chirag",102,'F'};
 }
 
 data lookuptable::match(string input) {
@@ -37,7 +38,8 @@ data lookuptable::match(string input) {
         return Swajeet;
     if (input == Pranav.name)
         return Pranav;
-
+    if (input == Chirag.name)
+        return Chirag;
     return {"", 0, ' '};
 }
 
@@ -64,14 +66,16 @@ void lookuptable::addData() {
     cout << "Enter Division: ";
     cin >> div;
 
-    if (name == bhoomika.name) {
+    if (name == Nithish.name) {
         Nithish = {name, rno, div};
-    } else if (name == amogh.name) {
+    } else if (name ==Saideep.name) {
         Saideep = {name, rno, div};
-    } else if (name == saanvi.name) {
+    } else if (name == Swajeet.name) {
         Swajeet = {name, rno, div};
-    } else if (name == ramya.name) {
+    } else if (name ==Pranav.name) {
         Pranav = {name, rno, div};
+    } else if (name ==Chirag.name) {
+       Chirag = {name, rno, div};
     } else {
         cout << "Name not recognized. Data not added." << endl;
     }
